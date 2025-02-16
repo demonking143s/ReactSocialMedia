@@ -8,7 +8,39 @@ import useAxiosFetch from '../hooks/useAxiosFetch.js'
 const DataContext = createContext({})
 
 export const DataProvider = ({children}) => {
-    const [posts,setPosts] = useState([])
+    const [posts,setPosts] = useState([
+      {
+        id:1,
+        title: "beatrix",
+        datetime: "July 01, 2025 11:23:35 AM",
+        body: "beatrix new skin is arrive"
+      },
+      {
+        id: 2,
+        title: "community",
+        datetime: "July 01, 2025 11:23:35 AM",
+        body: "students community is launch in world wide"
+      },
+      {
+        id: 3,
+        title: "demonking143s",
+        datetime: "July 01, 2025 11:23:35 AM",
+        body: "demonking is back to the world"
+      },
+      {
+        id: 4,
+        title: "hello world2",
+        datetime: "February 16, 2025 1:03:41 PM",
+        body: "new empire is begin"
+      },
+      {
+        id: 41,
+        title: "welcome",
+        datetime: "February 16, 2025 3:45:02 PM",
+        body: "welcome to new world"
+      }
+    ])
+
     const [search, setSearch] = useState("")
     const [searchResult, setSearchResult] = useState([]);
     const [postTitle, setPostTitle] = useState('');
